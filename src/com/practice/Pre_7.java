@@ -5,19 +5,19 @@ import java.util.Scanner;
 public class Pre_7 {
 
     public static void main(String[]args){
-        // 진행중
+        // 통과!
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int answer = 0;
-
-        for(int i=0;i<=a;i++){
-            int b = i*i;
-            if(b<=a){
-                answer = i;
+        // 사용자가 입력한 값
+        int n = sc.nextInt();
+        int a = 0;
+        int b = 0;
+        for(int i=1;i<=n;i++){
+            // 제곱한 값
+            a = i*i;
+            b = (i-1)*(i-1);
+            if(a>=n && b<n){
+                System.out.println(i);
             }
-            System.out.println(b);
         }
-        System.out.println(answer);
     }
-
 }
