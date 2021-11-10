@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Pre_10 {
     public static void main(String[]args){
+        // 소수 판별
 
         // n / 1 = n
         // n / n = 1
@@ -11,20 +12,22 @@ public class Pre_10 {
 
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
+
         // 1부터 n를 제외하고 반복문을 돌려서 n/i로 나눠 떨어지는 경우 N를 출력 == 소수가 아니다.
-        String str = "";
         int cnt = 0;
-        for(int i=2;i<=n-1;i++){
+
+        for(int i=1;i<n;i++){
             // 소수가 아니다.
             if(n%i==0) {
                 cnt++;
-                str = "NO";
-            }
-            if(cnt==0){
-                str="YES";
             }
         }
-        System.out.println(str);
-        // 출력은 한번만 되어야 한다 == 반복문 안에 들어가면 안된다.
+        System.out.println(cnt);
+        // 소수 = 약수 2개
+        if(cnt==1) {
+            System.out.println("YES");
+        } else {
+            System.out.println("NO");
+        }
     }
 }
