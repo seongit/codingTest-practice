@@ -18,17 +18,16 @@ public class SBF_box {
 
         // -> 실제로 활용할 수 있는 색의 개수가 나온다.
 
-
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
         int [] arr = new int[num];
-
         for(int i=0;i<arr.length;i++){
-            arr[i] = sc.nextInt();
-            arr[i]++;
+            int a = sc.nextInt();
+            arr[a]++;
         }
-        int validColor = 0; // 사용가능한 색깔의 총 개수를 구하는 변수
-        for(int i=1;i<=arr.length;i++){
+
+        int validColor = 0; // 사용   가능한 색깔의 총 개수를 구하는 변수
+        for(int i=1;i<=num;i++){
             // i번 색깔을 몇 개 쓸 수 있는가?
             if(arr[i]<2) validColor+=arr[i];
             else{
