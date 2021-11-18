@@ -20,8 +20,8 @@ public class SBF_box {
 
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
-        int [] arr = new int[num];
-        for(int i=0;i<arr.length;i++){
+        int [] arr = new int[1005];
+        for(int i=0;i<num;i++){
             int a = sc.nextInt();
             arr[a]++;
         }
