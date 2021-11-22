@@ -4,15 +4,15 @@ import java.util.Scanner;
 
 public class SBF_GCD_LCM {
 
-    public static void main(String[]args){
+        public static void main(String[]args){
 
 
-        // 유클리드호제법
+            // 유클리드호제법
 
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int A = a; // 원본 숫자 저장
+            Scanner sc = new Scanner(System.in);
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+            int A = a; // 원본 숫자 저장
         int B = b;
 
         while(true){
