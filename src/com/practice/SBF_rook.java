@@ -18,12 +18,27 @@ public class SBF_rook {
 
         Scanner sc = new Scanner(System.in);
         int[][] arr = new int[9][9];
+        int ry = 0;
+        int rx = 0;
+
         for(int i=0;i<arr.length;i++){
             for(int j=0;j<arr.length;j++){
                 arr[i][j] = sc.nextInt();
+                if(arr[i][j]==2) {
+                    ry = i;
+                    rx = j;
+                }
             }
         }
 
-
+        int result = 0;
+        for(int i=rx+1;i<9;i++){
+            if(arr[ry][i]==1){
+                result = 1;
+            }else if(arr[ry][i]==3){
+                result = 0;
+            }
+        }
+        System.out.println(result);
     }
 }
