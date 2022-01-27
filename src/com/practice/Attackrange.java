@@ -29,8 +29,8 @@ public class Attackrange {
         }
         for(int i=1;i<=n;i++){
             for(int j=1;j<=n;j++){
-                if (arr[i][j] == -1){System.out.print("x");}
-                else System.out.print(arr[i][j]);
+                if (arr[i][j] == -1){System.out.print("x" + " ");}
+                else System.out.print(arr[i][j] + " ");
             }
             System.out.println();
         }
