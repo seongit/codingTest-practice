@@ -20,14 +20,14 @@ public class ColorPaper {
             b = sc.nextInt();
             c = sc.nextInt();
             d = sc.nextInt();
-            for(int j=b;j<b+d;j++){
-                for(int k=a;k<a+c;k++){
+            for(int j=b;j<b+d;j++){ // j = 세로
+                for(int k=a;k<a+c;k++){ // k = 가로
                     plane[j][k] = i+1;
                 }
             }
         }
 
-        // 1의 개수, 2의 개수, 3의 개수
+        // 1의 개수, 2의 개수, 3의 개수 = 색종이의 면적을 구하자
         for(int i=0;i<101;i++){
             for(int j=0;j<101;j++){
                 count[plane[i][j]]++; // plane 안에 있는 숫자의 개수를 count에 담은 것
@@ -37,7 +37,6 @@ public class ColorPaper {
         for(int i=1;i<=n;i++){
             System.out.println(count[i]);
         }
-
 
     }
 }
