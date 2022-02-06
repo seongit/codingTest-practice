@@ -61,6 +61,7 @@ public class Bingo {
                 if(cnt >=3 ){
                     System.out.println(order);
                     return;
+
                 }
             }
         }
