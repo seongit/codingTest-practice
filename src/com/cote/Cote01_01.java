@@ -2,7 +2,7 @@ package com.cote;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Main {
+public class Cote01_01{
 
     public int solution(String str, Character ch){
         int result = 0;
@@ -29,7 +29,7 @@ public class Main {
     public static void main(String[] args){
 
         // Main 객체를 생성한다.
-        Main m = new Main ();
+        Cote01_01 m = new Cote01_01 ();
         Scanner sc = new Scanner(System.in);
 
         // 전체 문자열을 입력받는다.
