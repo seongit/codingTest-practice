@@ -2,7 +2,7 @@ package com.cote;
 
 import java.util.Scanner;
 
-public class Cote_02_05_Answer {
+public class Cote02_05_Answer {
 
     public int solution(int n){
         int answer = 0;
@@ -20,7 +20,7 @@ public class Cote_02_05_Answer {
     }
 
     public static void main(String[] args) {
-        Cote_02_05_Answer an = new Cote_02_05_Answer();
+        Cote02_05_Answer an = new Cote02_05_Answer();
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
         System.out.println(an.solution(num));

@@ -7,8 +7,10 @@ public class Cote02_06 {
 
     // 소수 판단 메소드
     public boolean is_Prime(int num){
-
-
+        if(num < 2) return false;
+        for(int i=2; i<num; i++){
+            if(num % i==0) return false;
+        }
         return true;
     }
 
@@ -17,12 +19,15 @@ public class Cote02_06 {
         ArrayList<Integer>answer = new ArrayList<>();
         // 문자 뒤집기
 
-        int res = 0; // 뒤집어진 문자가 보관됨
         for(int i=0;i<arr.length;i++){
-            int tmp = arr[i]
-            int t = tmp % 10;
-            res = tmp % 10;
-
+            int tmp = arr[i];
+            int res = 0; // 뒤집어진 문자가 보관됨
+            while(tmp>0){
+                int t = tmp % 10; // 나머지를 구함
+                res = res * 10 + t;
+                tmp = tmp/10;
+            }
+            if(is_Prime(res)) answer.add(res);
         }
 
         return answer;

@@ -2,7 +2,7 @@ package com.cote;
 
 import java.util.Scanner;
 
-public class Cote_01_06_Answer {
+public class Cote01_06_Answer {
 
     public String solution(String str) {
         String answer = "";
@@ -17,7 +17,7 @@ public class Cote_01_06_Answer {
 
     public static void main(String[] args) {
         // 문자열 입력 받는다.
-        Cote_01_06_Answer an = new Cote_01_06_Answer();
+        Cote01_06_Answer an = new Cote01_06_Answer();
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
         System.out.println(an.solution(str));
