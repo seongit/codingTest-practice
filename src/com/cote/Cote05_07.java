@@ -27,7 +27,7 @@ public class Cote05_07 {
 
     public static void main(String[] args) {
 
-        Cote05_07 an = new Cote05_07();
+        com.cote.Cote05_07 an = new com.cote.Cote05_07();
         Scanner sc = new Scanner(System.in);
 
         String need = sc.nextLine();
@@ -36,5 +36,6 @@ public class Cote05_07 {
         System.out.println(an.solution(need,plan));
 
     }
+
 
 }
