@@ -14,13 +14,15 @@ public class Cote07_08 {
 
     public int BFS(int s, int e){
         ch = new int[10001];
-        ch[s]=1;
+        ch[s]=1; // 출발 지점 세팅
         Q.offer(s);
 
-        int L = 0;
+        int L = 0; // 루트 노드 레벨 값
 
-        while(!Q.isEmpty()){
+        while(!Q.isEmpty()){ // 비어있을 때 멈춰야 함
+
             int len = Q.size();
+
             for(int i=0; i<len; i++){
                 int x = Q.poll() ; // 부모 노드를 X에 담기
                 for(int j=0; j<3; j++){
@@ -35,7 +37,6 @@ public class Cote07_08 {
             }
             L++;
         }
-
         return 0;
     }
 
