@@ -8,7 +8,7 @@ public class Cote07_01 {
         else{
             // 출력문 위치에 따라 찍히는 값 달라짐 (*중요)
             // 출력문이 앞에 있는 경우 결과 : 3 2 1
-            System.out.print("오잉" + n + " ");
+            System.out.print(n + " ");
             DFS(n-1);
             // 출력문이 뒤에 있는 경우 결과 : 1 2 3
             System.out.print(n + " ");
