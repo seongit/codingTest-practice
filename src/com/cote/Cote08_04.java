@@ -1,2 +1,4 @@
-package com.cote;public class Cote08_04 {
+package com.cote;
+
+public class Cote08_04 {
 }
